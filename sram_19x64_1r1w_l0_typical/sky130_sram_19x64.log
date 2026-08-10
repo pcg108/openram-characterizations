@@ -1,0 +1,806 @@
+[2026-08-10 15:33:20.905817] [openram.globals/init_openram]: Initializing OpenRAM...
+[2026-08-10 15:33:20.905997] [openram.globals/setup_paths]: Setting up paths...
+[2026-08-10 15:33:20.906139] [openram.globals/setup_paths]: OpenRAM source code found in /scratch/prashanth/openram/OpenRAM/compiler
+[2026-08-10 15:33:20.906302] [openram.globals/setup_paths]: Temporary files saved in /scratch/prashanth/openram/OpenRAM/runs/analytical_physical_20260810_153320/sram_19x64_analytical_physical/temp/
+[2026-08-10 15:33:20.906544] [openram.globals/read_config]: Configuration file is /scratch/prashanth/openram/OpenRAM/configs/sram_64_19_1r1w_l0_typical_analytical_physical.py
+[2026-08-10 15:33:20.907335] [openram.globals/read_config]: Output saved in /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/
+[2026-08-10 15:33:20.907645] [openram.globals/import_tech]: Importing technology: sky130
+[2026-08-10 15:33:20.907862] [openram.globals/import_tech]: Tech directory found in /scratch/prashanth/openram/OpenRAM/technology:/scratch/prashanth/openram/OpenRAM/technology
+[2026-08-10 15:33:20.908097] [openram.globals/import_tech]: Adding technology path: /scratch/prashanth/openram/OpenRAM/technology
+[2026-08-10 15:33:20.908314] [openram.globals/import_tech]: Adding technology path: /scratch/prashanth/openram/OpenRAM/technology
+[2026-08-10 15:33:20.911243] [openram.globals/purge_temp]: Purging temp directory: /scratch/prashanth/openram/OpenRAM/runs/analytical_physical_20260810_153320/sram_19x64_analytical_physical/temp/
+[2026-08-10 15:33:20.988888] [openram.globals/setup_bitcell]: Using bitcell: bitcell_2port
+[2026-08-10 15:33:21.983871] [openram.characterizer/<module>]: Initializing characterizer...
+[2026-08-10 15:33:21.993165] [openram.characterizer/<module>]: Analytical model enabled.
+[2026-08-10 15:33:22.002895] [openram.verify/<module>]: Initializing verify...
+[2026-08-10 15:33:22.011859] [openram.verify/<module>]: LVS/DRC/PEX disabled.
+[2026-08-10 15:33:22.012357] [openram.globals/setup_bitcell]: Using bitcell: bitcell_2port
+[2026-08-10 15:33:22.012413] |==============================================================================|
+[2026-08-10 15:33:22.012451] |=========                      OpenRAM v1.2.49                       =========|
+[2026-08-10 15:33:22.012480] |=========                                                            =========|
+[2026-08-10 15:33:22.012506] |=========               VLSI Design and Automation Lab               =========|
+[2026-08-10 15:33:22.012532] |=========        Computer Science and Engineering Department         =========|
+[2026-08-10 15:33:22.012559] |=========            University of California Santa Cruz             =========|
+[2026-08-10 15:33:22.012585] |=========                                                            =========|
+[2026-08-10 15:33:22.012610] |=========          Usage help: openram-user-group@ucsc.edu           =========|
+[2026-08-10 15:33:22.012635] |=========        Development help: openram-dev-group@ucsc.edu        =========|
+[2026-08-10 15:33:22.012665] |=========                See LICENSE for license info                =========|
+[2026-08-10 15:33:22.012690] |==============================================================================|
+[2026-08-10 15:33:22.012724] ** Start: 08/10/2026 15:33:22
+[2026-08-10 15:33:22.012756] Technology: sky130
+[2026-08-10 15:33:22.012784] Total size: 1216 bits
+[2026-08-10 15:33:22.012813] Word size: 19
+Words: 64
+Banks: 1
+[2026-08-10 15:33:22.012840] RW ports: 0
+R-only ports: 1
+W-only ports: 1
+[2026-08-10 15:33:22.012866] DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+[2026-08-10 15:33:22.012891] DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+[2026-08-10 15:33:22.012916] Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[2026-08-10 15:33:22.012945] Words per row: 1
+[2026-08-10 15:33:22.012977] Output files are: 
+[2026-08-10 15:33:22.013006] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.lvs
+[2026-08-10 15:33:22.013043] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.sp
+[2026-08-10 15:33:22.013070] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.v
+[2026-08-10 15:33:22.013095] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.lib
+[2026-08-10 15:33:22.013120] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.py
+[2026-08-10 15:33:22.013144] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.html
+[2026-08-10 15:33:22.013169] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.log
+[2026-08-10 15:33:22.013197] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.lef
+[2026-08-10 15:33:22.013222] /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.gds
+[2026-08-10 15:33:22.065318] [openram.modules.bitcell_2port/__init__]: Create bitcell with 2 ports
+[2026-08-10 15:33:22.065664] [openram.sram_config/recompute_sizes]: Recomputing with words per row: 1
+[2026-08-10 15:33:22.066112] [openram.sram_config/recompute_sizes]: Rows: 64 Cols: 19
+[2026-08-10 15:33:22.066461] [openram.sram_config/recompute_sizes]: Row addr size: 6 Col addr size: 0 Bank addr size: 6
+[2026-08-10 15:33:22.066734] [openram.sram_config/compute_sizes]: Set SRAM Words Per Row=1
+[2026-08-10 15:33:22.066966] [openram.sram/__init__]: create sram of size 19 with 64 num of words 1 banks
+[2026-08-10 15:33:22.078139] [openram.modules.bank/__init__]: create sram of size 19 with 64 words
+[2026-08-10 15:33:22.080662] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_capped_replica_bitcell_array 64 x 19
+[2026-08-10 15:33:22.081122] [openram.modules.capped_replica_bitcell_array/__init__]: Creating sky130_sram_19x64_capped_replica_bitcell_array 64 x 19 rbls: [1, 1] left_rbl: [0] right_rbl: [1]
+[2026-08-10 15:33:22.081958] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_replica_bitcell_array 64 x 19
+[2026-08-10 15:33:22.082558] [openram.modules.replica_bitcell_array/__init__]: Creating sky130_sram_19x64_replica_bitcell_array 64 x 19 rbls: [1, 1] left_rbl: [0] right_rbl: [1]
+[2026-08-10 15:33:22.083447] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_bitcell_array 64 x 19
+[2026-08-10 15:33:22.084124] [openram.modules.bitcell_array/__init__]: Creating sky130_sram_19x64_bitcell_array 64 x 19
+[2026-08-10 15:33:23.021249] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_replica_column 66 x 1
+[2026-08-10 15:33:23.036777] [openram.modules.replica_bitcell_2port/__init__]: Create replica bitcell 2 port object
+[2026-08-10 15:33:23.050410] [openram.modules.dummy_bitcell_2port/__init__]: Create dummy bitcell 2 port object
+[2026-08-10 15:33:23.081151] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_replica_column_0 66 x 1
+[2026-08-10 15:33:23.114440] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_dummy_array 1 x 19
+[2026-08-10 15:33:23.360214] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_col_cap_array 1 x 21
+[2026-08-10 15:33:23.362724] [openram.modules.col_cap_bitcell_2port/__init__]: Create col_cap bitcell 2 port object
+[2026-08-10 15:33:23.372557] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_col_cap_array_0 1 x 21
+[2026-08-10 15:33:23.382482] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_row_cap_array 66 x 1
+[2026-08-10 15:33:23.386090] [openram.modules.row_cap_bitcell_2port/__init__]: Create row_cap bitcell 2 port object
+[2026-08-10 15:33:23.408393] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_19x64_row_cap_array_0 66 x 1
+[2026-08-10 15:33:23.551018] [openram.modules.port_address/__init__]: create data port of cols 19 rows 64
+[2026-08-10 15:33:23.552300] [openram.modules.and2_dec/__init__]: Creating and2_dec and2_dec
+[2026-08-10 15:33:23.556280] [openram.modules.pinv_dec/__init__]: creating pinv_dec structure pinv_dec with size of 1
+[2026-08-10 15:33:23.557102] [openram.modules.pinv/__init__]: creating pinv structure pinv_dec with size of 1
+[2026-08-10 15:33:23.563207] [openram.modules.and3_dec/__init__]: Creating and3_dec and3_dec
+[2026-08-10 15:33:23.590505] [openram.modules.and4_dec/__init__]: Creating and4_dec and4_dec
+[2026-08-10 15:33:23.765499] [openram.modules.wordline_driver_array/__init__]: Creating sky130_sram_19x64_wordline_driver_array
+[2026-08-10 15:33:23.766279] [openram.modules.wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[2026-08-10 15:33:23.767218] [openram.modules.pinv_dec/__init__]: creating pinv_dec structure pinv_dec_0 with size of 4
+[2026-08-10 15:33:23.767956] [openram.modules.pinv/__init__]: creating pinv structure pinv_dec_0 with size of 4
+[2026-08-10 15:33:23.925213] [openram.modules.and2_dec/__init__]: Creating and2_dec and2_dec_0
+[2026-08-10 15:33:23.955178] [openram.modules.port_address/__init__]: create data port of cols 19 rows 64
+[2026-08-10 15:33:23.982311] [openram.modules.port_data/__init__]: create data port of size 19 with 1 words per row
+[2026-08-10 15:33:23.983041] [openram.modules.precharge/__init__]: creating precharge cell precharge
+[2026-08-10 15:33:23.987256] [openram.modules.precharge_array/__init__]: Creating sky130_sram_19x64_precharge_array
+[2026-08-10 15:33:23.987984] [openram.modules.precharge/__init__]: creating precharge cell precharge_0
+[2026-08-10 15:33:24.005640] [openram.modules.write_driver_array/__init__]: Creating sky130_sram_19x64_write_driver_array
+[2026-08-10 15:33:24.012386] [openram.modules.write_driver/__init__]: Create write_driver
+[2026-08-10 15:33:24.046612] [openram.modules.port_data/__init__]: create data port of size 19 with 1 words per row
+[2026-08-10 15:33:24.047555] [openram.modules.precharge_array/__init__]: Creating sky130_sram_19x64_precharge_array_0
+[2026-08-10 15:33:24.048267] [openram.modules.precharge/__init__]: creating precharge cell precharge_1
+[2026-08-10 15:33:24.064682] [openram.modules.sense_amp_array/__init__]: Creating sky130_sram_19x64_sense_amp_array
+[2026-08-10 15:33:24.071030] [openram.modules.sense_amp/__init__]: Create sense_amp
+[2026-08-10 15:33:24.192169] [openram.modules.dff_array/__init__]: Creating sky130_sram_19x64_row_addr_dff rows=6 cols=1
+[2026-08-10 15:33:24.198826] [openram.modules.dff_array/__init__]: Creating sky130_sram_19x64_data_dff rows=1 cols=19
+[2026-08-10 15:33:24.210010] [openram.modules.control_logic_base/__init__]: Creating control_logic_w
+[2026-08-10 15:33:24.210754] [openram.modules.dff_buf/__init__]: Creating sky130_sram_19x64_dff_buf
+[2026-08-10 15:33:24.211309] [openram.modules.pinv/__init__]: creating pinv structure pinv with size of 2
+[2026-08-10 15:33:24.213416] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.214229] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 2.16, found 1.26 x 2 = 2.52
+[2026-08-10 15:33:24.214970] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 0.72, found 0.74 x 1 = 0.74
+[2026-08-10 15:33:24.215743] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 2 pinv bin error: 0.19444444444444442 percent error 0.09722222222222221
+[2026-08-10 15:33:24.219885] [openram.modules.pinv/__init__]: creating pinv structure pinv_0 with size of 4
+[2026-08-10 15:33:24.220751] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.221538] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 4.32, found 1.68 x 3 = 5.04
+[2026-08-10 15:33:24.222277] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 1.44, found 1.68 x 1 = 1.68
+[2026-08-10 15:33:24.223052] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 4 pinv bin error: 0.5277777777777777 percent error 0.13194444444444442
+[2026-08-10 15:33:24.229297] [openram.modules.dff_buf_array/__init__]: Creating sky130_sram_19x64_dff_buf_array
+[2026-08-10 15:33:24.230040] [openram.modules.dff_buf/__init__]: Creating sky130_sram_19x64_dff_buf_0
+[2026-08-10 15:33:24.233852] [openram.modules.pand2/__init__]: Creating pand2 pand2
+[2026-08-10 15:33:24.234716] [openram.modules.pnand2/__init__]: creating pnand2 structure pnand2 with size of 1
+[2026-08-10 15:33:24.239284] [openram.modules.pdriver/__init__]: creating pdriver pdriver
+[2026-08-10 15:33:24.240209] [openram.modules.pinv/__init__]: creating pinv structure pinv_1 with size of 12
+[2026-08-10 15:33:24.241223] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.242190] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 12.959999999999999, found 2.0 x 7 = 14.0
+[2026-08-10 15:33:24.243093] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 4.32, found 1.68 x 3 = 5.04
+[2026-08-10 15:33:24.244028] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 6 pinv bin error: 0.7746913580246914 percent error 0.12911522633744857
+[2026-08-10 15:33:24.250845] [openram.modules.pbuf/__init__]: creating pbuf with size of 19
+[2026-08-10 15:33:24.251639] [openram.modules.pinv/__init__]: creating pinv structure pinv_2 with size of 19
+[2026-08-10 15:33:24.252517] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.253346] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 20.52, found 2.0 x 11 = 22.0
+[2026-08-10 15:33:24.254137] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 6.84, found 2.0 x 4 = 8.0
+[2026-08-10 15:33:24.254962] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 8 pinv bin error: 1.016406757634828 percent error 0.1270508447043535
+[2026-08-10 15:33:24.262490] [openram.modules.pdriver/__init__]: creating pdriver pdriver_0
+[2026-08-10 15:33:24.263349] [openram.modules.pinv/__init__]: creating pinv structure pinv_3 with size of 1
+[2026-08-10 15:33:24.264272] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.265096] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 1.08, found 1.12 x 1 = 1.12
+[2026-08-10 15:33:24.265884] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 0.36, found 0.36 x 1 = 0.36
+[2026-08-10 15:33:24.266694] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 10 pinv bin error: 1.0534437946718649 percent error 0.10534437946718649
+[2026-08-10 15:33:24.268858] [openram.modules.pinv/__init__]: creating pinv structure pinv_4 with size of 2
+[2026-08-10 15:33:24.269779] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.270601] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 2.16, found 1.26 x 2 = 2.52
+[2026-08-10 15:33:24.271381] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 0.72, found 0.74 x 1 = 0.74
+[2026-08-10 15:33:24.272186] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 12 pinv bin error: 1.2478882391163093 percent error 0.10399068659302578
+[2026-08-10 15:33:24.274262] [openram.modules.pinv/__init__]: creating pinv structure pinv_5 with size of 5
+[2026-08-10 15:33:24.275123] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.275898] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 5.3999999999999995, found 2.0 x 3 = 6.0
+[2026-08-10 15:33:24.276630] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 1.7999999999999998, found 2.0 x 1 = 2.0
+[2026-08-10 15:33:24.277392] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 14 pinv bin error: 1.4701104613385316 percent error 0.1050078900956094
+[2026-08-10 15:33:24.281334] [openram.modules.pinv/__init__]: creating pinv structure pinv_6 with size of 15
+[2026-08-10 15:33:24.282222] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.283019] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 16.2, found 2.0 x 9 = 18.0
+[2026-08-10 15:33:24.283769] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 5.3999999999999995, found 2.0 x 3 = 6.0
+[2026-08-10 15:33:24.284590] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 16 pinv bin error: 1.692332683560754 percent error 0.10577079272254712
+[2026-08-10 15:33:24.290814] [openram.modules.pinv/__init__]: creating pinv structure pinv_7 with size of 45
+[2026-08-10 15:33:24.291742] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.292583] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 48.6, found 2.0 x 25 = 50.0
+[2026-08-10 15:33:24.293367] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 16.2, found 2.0 x 9 = 18.0
+[2026-08-10 15:33:24.294195] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 18 pinv bin error: 1.832250379034005 percent error 0.10179168772411139
+[2026-08-10 15:33:24.309074] [openram.modules.pdriver/__init__]: creating pdriver pdriver_1
+[2026-08-10 15:33:24.309935] [openram.modules.pinv/__init__]: creating pinv structure pinv_8 with size of 7
+[2026-08-10 15:33:24.310863] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.311729] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 7.56, found 2.0 x 4 = 8.0
+[2026-08-10 15:33:24.312541] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 2.52, found 1.26 x 2 = 2.52
+[2026-08-10 15:33:24.313382] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 20 pinv bin error: 1.8904514372350634 percent error 0.09452257186175317
+[2026-08-10 15:33:24.318118] [openram.modules.pinv/__init__]: creating pinv structure pinv_9 with size of 21
+[2026-08-10 15:33:24.319050] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.319883] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 22.68, found 2.0 x 12 = 24.0
+[2026-08-10 15:33:24.320662] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 7.56, found 2.0 x 4 = 8.0
+[2026-08-10 15:33:24.321465] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 22 pinv bin error: 2.0068535536371797 percent error 0.09122061607441725
+[2026-08-10 15:33:24.329723] [openram.modules.pand3/__init__]: Creating pand3 pand3
+[2026-08-10 15:33:24.330674] [openram.modules.pnand3/__init__]: creating pnand3 structure pnand3 with size of 1
+[2026-08-10 15:33:24.334598] [openram.modules.pdriver/__init__]: creating pdriver pdriver_2
+[2026-08-10 15:33:24.335530] [openram.modules.pinv/__init__]: creating pinv structure pinv_10 with size of 27
+[2026-08-10 15:33:24.336564] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.337553] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 29.16, found 2.0 x 15 = 30.0
+[2026-08-10 15:33:24.338503] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 9.719999999999999, found 2.0 x 5 = 10.0
+[2026-08-10 15:33:24.339468] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 24 pinv bin error: 2.0644667223614594 percent error 0.0860194467650608
+[2026-08-10 15:33:24.349236] [openram.modules.pand3/__init__]: Creating pand3 pand3_0
+[2026-08-10 15:33:24.350126] [openram.modules.pdriver/__init__]: creating pdriver pdriver_3
+[2026-08-10 15:33:24.351055] [openram.modules.pinv/__init__]: creating pinv structure pinv_11 with size of 19
+[2026-08-10 15:33:24.352092] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.353090] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 20.52, found 2.0 x 11 = 22.0
+[2026-08-10 15:33:24.354043] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 6.84, found 2.0 x 4 = 8.0
+[2026-08-10 15:33:24.355024] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 26 pinv bin error: 2.3061821219715957 percent error 0.08869931238352291
+[2026-08-10 15:33:24.359251] [openram.modules.pinv/__init__]: creating pinv structure pinv_12 with size of 1
+[2026-08-10 15:33:24.360077] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.360776] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 1.08, found 1.12 x 1 = 1.12
+[2026-08-10 15:33:24.361431] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 0.36, found 0.36 x 1 = 0.36
+[2026-08-10 15:33:24.362125] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 28 pinv bin error: 2.343219159008633 percent error 0.0836863985360226
+[2026-08-10 15:33:24.364185] [openram.modules.pdriver/__init__]: creating pdriver pdriver_4
+[2026-08-10 15:33:24.365038] [openram.modules.pinv/__init__]: creating pinv structure pinv_13 with size of 6
+[2026-08-10 15:33:24.365982] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.366850] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 6.4799999999999995, found 2.0 x 4 = 8.0
+[2026-08-10 15:33:24.367669] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 2.16, found 1.26 x 2 = 2.52
+[2026-08-10 15:33:24.368514] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 30 pinv bin error: 2.7444537269098674 percent error 0.09148179089699558
+[2026-08-10 15:33:24.372427] [openram.modules.pnand2/__init__]: creating pnand2 structure pnand2_0 with size of 1
+[2026-08-10 15:33:24.375590] [openram.modules.delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[2026-08-10 15:33:24.376215] [openram.modules.pinv/__init__]: creating pinv structure pinv_14 with size of 1
+[2026-08-10 15:33:24.377192] [openram.modules.pinv/determine_tx_mults]: Height avail 6.0800 PMOS 2.9350 NMOS 2.9350
+[2026-08-10 15:33:24.378016] [openram.modules.pinv/determine_tx_mults]: prebinning pmos tx, target: 1.08, found 1.12 x 1 = 1.12
+[2026-08-10 15:33:24.378787] [openram.modules.pinv/determine_tx_mults]: prebinning nmos tx, target: 0.36, found 0.36 x 1 = 0.36
+[2026-08-10 15:33:24.379590] [openram.modules.pinv/determine_tx_mults]: pinv bin count: 32 pinv bin error: 2.7814907639469046 percent error 0.08692158637334077
+[2026-08-10 15:33:24.424005] [openram.modules.control_logic_base/__init__]: Creating control_logic_r
+[2026-08-10 15:33:24.439266] ** Submodules: 2.4 seconds
+[2026-08-10 15:33:24.458813] ** Placement: 0.0 seconds
+[2026-08-10 15:33:56.964022] [openram.base.hierarchy_layout/get_bbox]: Size: 288.82 x 237.22 with perimeter margin 0
+[2026-08-10 15:33:57.015588] [openram.router.router_tech/__init__]: Minimum track width: 0.680
+[2026-08-10 15:33:57.016073] [openram.router.router_tech/__init__]: Minimum track space: 0.300
+[2026-08-10 15:33:57.016530] [openram.router.router_tech/__init__]: Minimum track wire width: 0.380
+[2026-08-10 15:33:57.016987] [openram.router.router_tech/__init__]: Track factor: v[1.4705882352941178,1.4705882352941178]
+[2026-08-10 15:33:57.017358] [openram.router.signal_escape_router/route]: Running signal escape router...
+[2026-08-10 15:34:37.916850] [openram.router.signal_escape_router/route]: Routed 1 of 54 signal pins
+[2026-08-10 15:34:37.943524] [openram.router.signal_escape_router/route]: Routed 2 of 54 signal pins
+[2026-08-10 15:34:38.064577] [openram.router.signal_escape_router/route]: Routed 3 of 54 signal pins
+[2026-08-10 15:34:38.288520] [openram.router.signal_escape_router/route]: Routed 4 of 54 signal pins
+[2026-08-10 15:34:38.458289] [openram.router.signal_escape_router/route]: Routed 5 of 54 signal pins
+[2026-08-10 15:34:38.681412] [openram.router.signal_escape_router/route]: Routed 6 of 54 signal pins
+[2026-08-10 15:34:38.851673] [openram.router.signal_escape_router/route]: Routed 7 of 54 signal pins
+[2026-08-10 15:34:39.037350] [openram.router.signal_escape_router/route]: Routed 8 of 54 signal pins
+[2026-08-10 15:34:39.230735] [openram.router.signal_escape_router/route]: Routed 9 of 54 signal pins
+[2026-08-10 15:34:39.430730] [openram.router.signal_escape_router/route]: Routed 10 of 54 signal pins
+[2026-08-10 15:34:39.635504] [openram.router.signal_escape_router/route]: Routed 11 of 54 signal pins
+[2026-08-10 15:34:39.850719] [openram.router.signal_escape_router/route]: Routed 12 of 54 signal pins
+[2026-08-10 15:34:40.071729] [openram.router.signal_escape_router/route]: Routed 13 of 54 signal pins
+[2026-08-10 15:34:40.293214] [openram.router.signal_escape_router/route]: Routed 14 of 54 signal pins
+[2026-08-10 15:34:40.462875] [openram.router.signal_escape_router/route]: Routed 15 of 54 signal pins
+[2026-08-10 15:34:40.642652] [openram.router.signal_escape_router/route]: Routed 16 of 54 signal pins
+[2026-08-10 15:34:40.825591] [openram.router.signal_escape_router/route]: Routed 17 of 54 signal pins
+[2026-08-10 15:34:41.025886] [openram.router.signal_escape_router/route]: Routed 18 of 54 signal pins
+[2026-08-10 15:34:41.231307] [openram.router.signal_escape_router/route]: Routed 19 of 54 signal pins
+[2026-08-10 15:34:41.402262] [openram.router.signal_escape_router/route]: Routed 20 of 54 signal pins
+[2026-08-10 15:34:41.578446] [openram.router.signal_escape_router/route]: Routed 21 of 54 signal pins
+[2026-08-10 15:34:41.660819] [openram.router.signal_escape_router/route]: Routed 22 of 54 signal pins
+[2026-08-10 15:34:41.742477] [openram.router.signal_escape_router/route]: Routed 23 of 54 signal pins
+[2026-08-10 15:34:41.771284] [openram.router.signal_escape_router/route]: Routed 24 of 54 signal pins
+[2026-08-10 15:34:41.822340] [openram.router.signal_escape_router/route]: Routed 25 of 54 signal pins
+[2026-08-10 15:34:41.853400] [openram.router.signal_escape_router/route]: Routed 26 of 54 signal pins
+[2026-08-10 15:34:41.888935] [openram.router.signal_escape_router/route]: Routed 27 of 54 signal pins
+[2026-08-10 15:34:41.927802] [openram.router.signal_escape_router/route]: Routed 28 of 54 signal pins
+[2026-08-10 15:34:41.964245] [openram.router.signal_escape_router/route]: Routed 29 of 54 signal pins
+[2026-08-10 15:34:42.002969] [openram.router.signal_escape_router/route]: Routed 30 of 54 signal pins
+[2026-08-10 15:34:42.037217] [openram.router.signal_escape_router/route]: Routed 31 of 54 signal pins
+[2026-08-10 15:34:42.073603] [openram.router.signal_escape_router/route]: Routed 32 of 54 signal pins
+[2026-08-10 15:34:42.108101] [openram.router.signal_escape_router/route]: Routed 33 of 54 signal pins
+[2026-08-10 15:34:42.145226] [openram.router.signal_escape_router/route]: Routed 34 of 54 signal pins
+[2026-08-10 15:34:42.182416] [openram.router.signal_escape_router/route]: Routed 35 of 54 signal pins
+[2026-08-10 15:34:42.220452] [openram.router.signal_escape_router/route]: Routed 36 of 54 signal pins
+[2026-08-10 15:34:42.254300] [openram.router.signal_escape_router/route]: Routed 37 of 54 signal pins
+[2026-08-10 15:34:42.294740] [openram.router.signal_escape_router/route]: Routed 38 of 54 signal pins
+[2026-08-10 15:34:42.330464] [openram.router.signal_escape_router/route]: Routed 39 of 54 signal pins
+[2026-08-10 15:34:42.368575] [openram.router.signal_escape_router/route]: Routed 40 of 54 signal pins
+[2026-08-10 15:34:42.406764] [openram.router.signal_escape_router/route]: Routed 41 of 54 signal pins
+[2026-08-10 15:34:42.445407] [openram.router.signal_escape_router/route]: Routed 42 of 54 signal pins
+[2026-08-10 15:34:42.484867] [openram.router.signal_escape_router/route]: Routed 43 of 54 signal pins
+[2026-08-10 15:34:42.526612] [openram.router.signal_escape_router/route]: Routed 44 of 54 signal pins
+[2026-08-10 15:34:42.585514] [openram.router.signal_escape_router/route]: Routed 45 of 54 signal pins
+[2026-08-10 15:34:42.655419] [openram.router.signal_escape_router/route]: Routed 46 of 54 signal pins
+[2026-08-10 15:34:42.717681] [openram.router.signal_escape_router/route]: Routed 47 of 54 signal pins
+[2026-08-10 15:34:42.757420] [openram.router.signal_escape_router/route]: Routed 48 of 54 signal pins
+[2026-08-10 15:34:42.824095] [openram.router.signal_escape_router/route]: Routed 49 of 54 signal pins
+[2026-08-10 15:34:42.869560] [openram.router.signal_escape_router/route]: Routed 50 of 54 signal pins
+[2026-08-10 15:34:42.914301] [openram.router.signal_escape_router/route]: Routed 51 of 54 signal pins
+[2026-08-10 15:34:42.959998] [openram.router.signal_escape_router/route]: Routed 52 of 54 signal pins
+[2026-08-10 15:34:43.036891] [openram.router.signal_escape_router/route]: Routed 53 of 54 signal pins
+[2026-08-10 15:34:43.112568] [openram.router.signal_escape_router/route]: Routed 54 of 54 signal pins
+[2026-08-10 15:34:43.162220] [openram.router.router_tech/__init__]: Minimum track width: 0.680
+[2026-08-10 15:34:43.162640] [openram.router.router_tech/__init__]: Minimum track space: 0.300
+[2026-08-10 15:34:43.163015] [openram.router.router_tech/__init__]: Minimum track wire width: 0.380
+[2026-08-10 15:34:43.163399] [openram.router.router_tech/__init__]: Track factor: v[1.4705882352941178,1.4705882352941178]
+[2026-08-10 15:34:43.163720] [openram.router.supply_router/route]: Running router for vdd and gnd...
+[2026-08-10 15:35:26.367275] [openram.router.supply_router/route]: Routed 1 of 280 supply pins
+[2026-08-10 15:35:27.198770] [openram.router.supply_router/route]: Routed 2 of 280 supply pins
+[2026-08-10 15:35:28.040021] [openram.router.supply_router/route]: Routed 3 of 280 supply pins
+[2026-08-10 15:35:28.860088] [openram.router.supply_router/route]: Routed 4 of 280 supply pins
+[2026-08-10 15:35:28.950785] [openram.router.supply_router/route]: Routed 5 of 280 supply pins
+[2026-08-10 15:35:29.945338] [openram.router.supply_router/route]: Routed 6 of 280 supply pins
+[2026-08-10 15:35:30.804475] [openram.router.supply_router/route]: Routed 7 of 280 supply pins
+[2026-08-10 15:35:31.658922] [openram.router.supply_router/route]: Routed 8 of 280 supply pins
+[2026-08-10 15:35:32.557348] [openram.router.supply_router/route]: Routed 9 of 280 supply pins
+[2026-08-10 15:35:32.661503] [openram.router.supply_router/route]: Routed 10 of 280 supply pins
+[2026-08-10 15:35:33.593513] [openram.router.supply_router/route]: Routed 11 of 280 supply pins
+[2026-08-10 15:35:33.617299] [openram.router.supply_router/route]: Routed 12 of 280 supply pins
+[2026-08-10 15:35:33.640126] [openram.router.supply_router/route]: Routed 13 of 280 supply pins
+[2026-08-10 15:35:33.663881] [openram.router.supply_router/route]: Routed 14 of 280 supply pins
+[2026-08-10 15:35:33.694289] [openram.router.supply_router/route]: Routed 15 of 280 supply pins
+[2026-08-10 15:35:33.718446] [openram.router.supply_router/route]: Routed 16 of 280 supply pins
+[2026-08-10 15:35:33.742552] [openram.router.supply_router/route]: Routed 17 of 280 supply pins
+[2026-08-10 15:35:33.766741] [openram.router.supply_router/route]: Routed 18 of 280 supply pins
+[2026-08-10 15:35:33.828427] [openram.router.supply_router/route]: Routed 19 of 280 supply pins
+[2026-08-10 15:35:33.857653] [openram.router.supply_router/route]: Routed 20 of 280 supply pins
+[2026-08-10 15:35:33.882687] [openram.router.supply_router/route]: Routed 21 of 280 supply pins
+[2026-08-10 15:35:33.908092] [openram.router.supply_router/route]: Routed 22 of 280 supply pins
+[2026-08-10 15:35:33.934008] [openram.router.supply_router/route]: Routed 23 of 280 supply pins
+[2026-08-10 15:35:33.968285] [openram.router.supply_router/route]: Routed 24 of 280 supply pins
+[2026-08-10 15:35:34.005923] [openram.router.supply_router/route]: Routed 25 of 280 supply pins
+[2026-08-10 15:35:34.071425] [openram.router.supply_router/route]: Routed 26 of 280 supply pins
+[2026-08-10 15:35:34.105068] [openram.router.supply_router/route]: Routed 27 of 280 supply pins
+[2026-08-10 15:35:34.134774] [openram.router.supply_router/route]: Routed 28 of 280 supply pins
+[2026-08-10 15:35:34.164815] [openram.router.supply_router/route]: Routed 29 of 280 supply pins
+[2026-08-10 15:35:34.195169] [openram.router.supply_router/route]: Routed 30 of 280 supply pins
+[2026-08-10 15:35:34.226049] [openram.router.supply_router/route]: Routed 31 of 280 supply pins
+[2026-08-10 15:35:34.263528] [openram.router.supply_router/route]: Routed 32 of 280 supply pins
+[2026-08-10 15:35:34.307101] [openram.router.supply_router/route]: Routed 33 of 280 supply pins
+[2026-08-10 15:35:34.339062] [openram.router.supply_router/route]: Routed 34 of 280 supply pins
+[2026-08-10 15:35:34.371459] [openram.router.supply_router/route]: Routed 35 of 280 supply pins
+[2026-08-10 15:35:34.403904] [openram.router.supply_router/route]: Routed 36 of 280 supply pins
+[2026-08-10 15:35:34.436097] [openram.router.supply_router/route]: Routed 37 of 280 supply pins
+[2026-08-10 15:35:34.494344] [openram.router.supply_router/route]: Routed 38 of 280 supply pins
+[2026-08-10 15:35:34.555895] [openram.router.supply_router/route]: Routed 39 of 280 supply pins
+[2026-08-10 15:35:34.594560] [openram.router.supply_router/route]: Routed 40 of 280 supply pins
+[2026-08-10 15:35:34.628957] [openram.router.supply_router/route]: Routed 41 of 280 supply pins
+[2026-08-10 15:35:34.661330] [openram.router.supply_router/route]: Routed 42 of 280 supply pins
+[2026-08-10 15:35:34.696471] [openram.router.supply_router/route]: Routed 43 of 280 supply pins
+[2026-08-10 15:35:34.732560] [openram.router.supply_router/route]: Routed 44 of 280 supply pins
+[2026-08-10 15:35:34.769206] [openram.router.supply_router/route]: Routed 45 of 280 supply pins
+[2026-08-10 15:35:34.805976] [openram.router.supply_router/route]: Routed 46 of 280 supply pins
+[2026-08-10 15:35:34.867583] [openram.router.supply_router/route]: Routed 47 of 280 supply pins
+[2026-08-10 15:35:34.933443] [openram.router.supply_router/route]: Routed 48 of 280 supply pins
+[2026-08-10 15:35:34.976018] [openram.router.supply_router/route]: Routed 49 of 280 supply pins
+[2026-08-10 15:35:35.030151] [openram.router.supply_router/route]: Routed 50 of 280 supply pins
+[2026-08-10 15:35:35.087674] [openram.router.supply_router/route]: Routed 51 of 280 supply pins
+[2026-08-10 15:35:35.157611] [openram.router.supply_router/route]: Routed 52 of 280 supply pins
+[2026-08-10 15:35:35.228704] [openram.router.supply_router/route]: Routed 53 of 280 supply pins
+[2026-08-10 15:35:35.311380] [openram.router.supply_router/route]: Routed 54 of 280 supply pins
+[2026-08-10 15:35:35.499473] [openram.router.supply_router/route]: Routed 55 of 280 supply pins
+[2026-08-10 15:35:35.687969] [openram.router.supply_router/route]: Routed 56 of 280 supply pins
+[2026-08-10 15:35:35.785808] [openram.router.supply_router/route]: Routed 57 of 280 supply pins
+[2026-08-10 15:35:35.897994] [openram.router.supply_router/route]: Routed 58 of 280 supply pins
+[2026-08-10 15:35:36.014003] [openram.router.supply_router/route]: Routed 59 of 280 supply pins
+[2026-08-10 15:35:36.139005] [openram.router.supply_router/route]: Routed 60 of 280 supply pins
+[2026-08-10 15:35:36.288813] [openram.router.supply_router/route]: Routed 61 of 280 supply pins
+[2026-08-10 15:35:36.431876] [openram.router.supply_router/route]: Routed 62 of 280 supply pins
+[2026-08-10 15:35:36.573048] [openram.router.supply_router/route]: Routed 63 of 280 supply pins
+[2026-08-10 15:35:36.638072] [openram.router.supply_router/route]: Routed 64 of 280 supply pins
+[2026-08-10 15:35:36.687861] [openram.router.supply_router/route]: Routed 65 of 280 supply pins
+[2026-08-10 15:35:36.732031] [openram.router.supply_router/route]: Routed 66 of 280 supply pins
+[2026-08-10 15:35:36.773973] [openram.router.supply_router/route]: Routed 67 of 280 supply pins
+[2026-08-10 15:35:36.924506] [openram.router.supply_router/route]: Routed 68 of 280 supply pins
+[2026-08-10 15:35:36.970726] [openram.router.supply_router/route]: Routed 69 of 280 supply pins
+[2026-08-10 15:35:37.020107] [openram.router.supply_router/route]: Routed 70 of 280 supply pins
+[2026-08-10 15:35:37.075845] [openram.router.supply_router/route]: Routed 71 of 280 supply pins
+[2026-08-10 15:35:37.235077] [openram.router.supply_router/route]: Routed 72 of 280 supply pins
+[2026-08-10 15:35:37.258912] [openram.router.supply_router/route]: Routed 73 of 280 supply pins
+[2026-08-10 15:35:37.282995] [openram.router.supply_router/route]: Routed 74 of 280 supply pins
+[2026-08-10 15:35:37.306797] [openram.router.supply_router/route]: Routed 75 of 280 supply pins
+[2026-08-10 15:35:38.167312] [openram.router.supply_router/route]: Routed 76 of 280 supply pins
+[2026-08-10 15:35:39.039391] [openram.router.supply_router/route]: Routed 77 of 280 supply pins
+[2026-08-10 15:35:39.933379] [openram.router.supply_router/route]: Routed 78 of 280 supply pins
+[2026-08-10 15:35:40.993012] [openram.router.supply_router/route]: Routed 79 of 280 supply pins
+[2026-08-10 15:35:41.098070] [openram.router.supply_router/route]: Routed 80 of 280 supply pins
+[2026-08-10 15:35:42.013923] [openram.router.supply_router/route]: Routed 81 of 280 supply pins
+[2026-08-10 15:35:42.955097] [openram.router.supply_router/route]: Routed 82 of 280 supply pins
+[2026-08-10 15:35:43.054436] [openram.router.supply_router/route]: Routed 83 of 280 supply pins
+[2026-08-10 15:35:44.019403] [openram.router.supply_router/route]: Routed 84 of 280 supply pins
+[2026-08-10 15:35:44.965082] [openram.router.supply_router/route]: Routed 85 of 280 supply pins
+[2026-08-10 15:35:45.011430] [openram.router.supply_router/route]: Routed 86 of 280 supply pins
+[2026-08-10 15:35:45.055785] [openram.router.supply_router/route]: Routed 87 of 280 supply pins
+[2026-08-10 15:35:45.101346] [openram.router.supply_router/route]: Routed 88 of 280 supply pins
+[2026-08-10 15:35:45.155966] [openram.router.supply_router/route]: Routed 89 of 280 supply pins
+[2026-08-10 15:35:45.221459] [openram.router.supply_router/route]: Routed 90 of 280 supply pins
+[2026-08-10 15:35:45.283142] [openram.router.supply_router/route]: Routed 91 of 280 supply pins
+[2026-08-10 15:35:45.352510] [openram.router.supply_router/route]: Routed 92 of 280 supply pins
+[2026-08-10 15:35:45.390096] [openram.router.supply_router/route]: Routed 93 of 280 supply pins
+[2026-08-10 15:35:45.423827] [openram.router.supply_router/route]: Routed 94 of 280 supply pins
+[2026-08-10 15:35:45.457153] [openram.router.supply_router/route]: Routed 95 of 280 supply pins
+[2026-08-10 15:35:45.491033] [openram.router.supply_router/route]: Routed 96 of 280 supply pins
+[2026-08-10 15:35:45.525431] [openram.router.supply_router/route]: Routed 97 of 280 supply pins
+[2026-08-10 15:35:45.560204] [openram.router.supply_router/route]: Routed 98 of 280 supply pins
+[2026-08-10 15:35:45.630851] [openram.router.supply_router/route]: Routed 99 of 280 supply pins
+[2026-08-10 15:35:45.670978] [openram.router.supply_router/route]: Routed 100 of 280 supply pins
+[2026-08-10 15:35:45.706798] [openram.router.supply_router/route]: Routed 101 of 280 supply pins
+[2026-08-10 15:35:45.742929] [openram.router.supply_router/route]: Routed 102 of 280 supply pins
+[2026-08-10 15:35:45.779465] [openram.router.supply_router/route]: Routed 103 of 280 supply pins
+[2026-08-10 15:35:45.830418] [openram.router.supply_router/route]: Routed 104 of 280 supply pins
+[2026-08-10 15:35:45.889129] [openram.router.supply_router/route]: Routed 105 of 280 supply pins
+[2026-08-10 15:35:45.922152] [openram.router.supply_router/route]: Routed 106 of 280 supply pins
+[2026-08-10 15:35:45.954903] [openram.router.supply_router/route]: Routed 107 of 280 supply pins
+[2026-08-10 15:35:45.988558] [openram.router.supply_router/route]: Routed 108 of 280 supply pins
+[2026-08-10 15:35:46.021487] [openram.router.supply_router/route]: Routed 109 of 280 supply pins
+[2026-08-10 15:35:46.054382] [openram.router.supply_router/route]: Routed 110 of 280 supply pins
+[2026-08-10 15:35:46.129285] [openram.router.supply_router/route]: Routed 111 of 280 supply pins
+[2026-08-10 15:35:46.165674] [openram.router.supply_router/route]: Routed 112 of 280 supply pins
+[2026-08-10 15:35:46.198867] [openram.router.supply_router/route]: Routed 113 of 280 supply pins
+[2026-08-10 15:35:46.232377] [openram.router.supply_router/route]: Routed 114 of 280 supply pins
+[2026-08-10 15:35:46.266731] [openram.router.supply_router/route]: Routed 115 of 280 supply pins
+[2026-08-10 15:35:46.301121] [openram.router.supply_router/route]: Routed 116 of 280 supply pins
+[2026-08-10 15:35:46.336214] [openram.router.supply_router/route]: Routed 117 of 280 supply pins
+[2026-08-10 15:35:46.372713] [openram.router.supply_router/route]: Routed 118 of 280 supply pins
+[2026-08-10 15:35:46.488020] [openram.router.supply_router/route]: Routed 119 of 280 supply pins
+[2026-08-10 15:35:46.612522] [openram.router.supply_router/route]: Routed 120 of 280 supply pins
+[2026-08-10 15:35:46.657242] [openram.router.supply_router/route]: Routed 121 of 280 supply pins
+[2026-08-10 15:35:46.702694] [openram.router.supply_router/route]: Routed 122 of 280 supply pins
+[2026-08-10 15:35:46.752388] [openram.router.supply_router/route]: Routed 123 of 280 supply pins
+[2026-08-10 15:35:46.807630] [openram.router.supply_router/route]: Routed 124 of 280 supply pins
+[2026-08-10 15:35:46.865009] [openram.router.supply_router/route]: Routed 125 of 280 supply pins
+[2026-08-10 15:35:46.930224] [openram.router.supply_router/route]: Routed 126 of 280 supply pins
+[2026-08-10 15:35:47.059549] [openram.router.supply_router/route]: Routed 127 of 280 supply pins
+[2026-08-10 15:35:47.142946] [openram.router.supply_router/route]: Routed 128 of 280 supply pins
+[2026-08-10 15:35:47.187984] [openram.router.supply_router/route]: Routed 129 of 280 supply pins
+[2026-08-10 15:35:47.231938] [openram.router.supply_router/route]: Routed 130 of 280 supply pins
+[2026-08-10 15:35:47.274409] [openram.router.supply_router/route]: Routed 131 of 280 supply pins
+[2026-08-10 15:35:47.317995] [openram.router.supply_router/route]: Routed 132 of 280 supply pins
+[2026-08-10 15:35:47.361897] [openram.router.supply_router/route]: Routed 133 of 280 supply pins
+[2026-08-10 15:35:47.404879] [openram.router.supply_router/route]: Routed 134 of 280 supply pins
+[2026-08-10 15:35:47.449318] [openram.router.supply_router/route]: Routed 135 of 280 supply pins
+[2026-08-10 15:35:47.517511] [openram.router.supply_router/route]: Routed 136 of 280 supply pins
+[2026-08-10 15:35:47.566907] [openram.router.supply_router/route]: Routed 137 of 280 supply pins
+[2026-08-10 15:35:47.613096] [openram.router.supply_router/route]: Routed 138 of 280 supply pins
+[2026-08-10 15:35:47.658791] [openram.router.supply_router/route]: Routed 139 of 280 supply pins
+[2026-08-10 15:35:47.713451] [openram.router.supply_router/route]: Routed 140 of 280 supply pins
+[2026-08-10 15:35:47.757920] [openram.router.supply_router/route]: Routed 141 of 280 supply pins
+[2026-08-10 15:35:47.810300] [openram.router.supply_router/route]: Routed 142 of 280 supply pins
+[2026-08-10 15:35:48.060475] [openram.router.supply_router/route]: Routed 143 of 280 supply pins
+[2026-08-10 15:35:48.350404] [openram.router.supply_router/route]: Routed 144 of 280 supply pins
+[2026-08-10 15:35:48.810206] [openram.router.supply_router/route]: Routed 145 of 280 supply pins
+[2026-08-10 15:35:49.045041] [openram.router.supply_router/route]: Routed 146 of 280 supply pins
+[2026-08-10 15:35:49.371886] [openram.router.supply_router/route]: Routed 147 of 280 supply pins
+[2026-08-10 15:35:49.451928] [openram.router.supply_router/route]: Routed 148 of 280 supply pins
+[2026-08-10 15:35:49.529213] [openram.router.supply_router/route]: Routed 149 of 280 supply pins
+[2026-08-10 15:35:49.557568] [openram.router.supply_router/route]: Routed 150 of 280 supply pins
+[2026-08-10 15:35:49.646715] [openram.router.supply_router/route]: Routed 151 of 280 supply pins
+[2026-08-10 15:35:49.681300] [openram.router.supply_router/route]: Routed 152 of 280 supply pins
+[2026-08-10 15:35:49.756488] [openram.router.supply_router/route]: Routed 153 of 280 supply pins
+[2026-08-10 15:35:49.784560] [openram.router.supply_router/route]: Routed 154 of 280 supply pins
+[2026-08-10 15:35:49.868123] [openram.router.supply_router/route]: Routed 155 of 280 supply pins
+[2026-08-10 15:35:49.969340] [openram.router.supply_router/route]: Routed 156 of 280 supply pins
+[2026-08-10 15:35:50.005002] [openram.router.supply_router/route]: Routed 157 of 280 supply pins
+[2026-08-10 15:35:50.096275] [openram.router.supply_router/route]: Routed 158 of 280 supply pins
+[2026-08-10 15:35:50.131215] [openram.router.supply_router/route]: Routed 159 of 280 supply pins
+[2026-08-10 15:35:50.207479] [openram.router.supply_router/route]: Routed 160 of 280 supply pins
+[2026-08-10 15:35:50.312170] [openram.router.supply_router/route]: Routed 161 of 280 supply pins
+[2026-08-10 15:35:51.340733] [openram.router.supply_router/route]: Routed 162 of 280 supply pins
+[2026-08-10 15:35:53.954343] [openram.router.supply_router/route]: Routed 163 of 280 supply pins
+[2026-08-10 15:35:57.622682] [openram.router.supply_router/route]: Routed 164 of 280 supply pins
+[2026-08-10 15:35:59.071043] [openram.router.supply_router/route]: Routed 165 of 280 supply pins
+[2026-08-10 15:35:59.651784] [openram.router.supply_router/route]: Routed 166 of 280 supply pins
+[2026-08-10 15:36:00.579907] [openram.router.supply_router/route]: Routed 167 of 280 supply pins
+[2026-08-10 15:36:01.645727] [openram.router.supply_router/route]: Routed 168 of 280 supply pins
+[2026-08-10 15:36:02.659616] [openram.router.supply_router/route]: Routed 169 of 280 supply pins
+[2026-08-10 15:36:04.079574] [openram.router.supply_router/route]: Routed 170 of 280 supply pins
+[2026-08-10 15:36:04.931186] [openram.router.supply_router/route]: Routed 171 of 280 supply pins
+[2026-08-10 15:36:05.793090] [openram.router.supply_router/route]: Routed 172 of 280 supply pins
+[2026-08-10 15:36:07.301224] [openram.router.supply_router/route]: Routed 173 of 280 supply pins
+[2026-08-10 15:36:08.209917] [openram.router.supply_router/route]: Routed 174 of 280 supply pins
+[2026-08-10 15:36:08.860018] [openram.router.supply_router/route]: Routed 175 of 280 supply pins
+[2026-08-10 15:36:09.751870] [openram.router.supply_router/route]: Routed 176 of 280 supply pins
+[2026-08-10 15:36:10.822764] [openram.router.supply_router/route]: Routed 177 of 280 supply pins
+[2026-08-10 15:36:11.607642] [openram.router.supply_router/route]: Routed 178 of 280 supply pins
+[2026-08-10 15:36:12.733814] [openram.router.supply_router/route]: Routed 179 of 280 supply pins
+[2026-08-10 15:36:16.486376] [openram.router.supply_router/route]: Routed 180 of 280 supply pins
+[2026-08-10 15:36:19.063176] [openram.router.supply_router/route]: Routed 181 of 280 supply pins
+[2026-08-10 15:36:19.135149] [openram.router.supply_router/route]: Routed 182 of 280 supply pins
+[2026-08-10 15:36:19.546097] [openram.router.supply_router/route]: Routed 183 of 280 supply pins
+[2026-08-10 15:36:19.717703] [openram.router.supply_router/route]: Routed 184 of 280 supply pins
+[2026-08-10 15:36:19.765903] [openram.router.supply_router/route]: Routed 185 of 280 supply pins
+[2026-08-10 15:36:20.998851] [openram.router.supply_router/route]: Routed 186 of 280 supply pins
+[2026-08-10 15:36:21.096740] [openram.router.supply_router/route]: Routed 187 of 280 supply pins
+[2026-08-10 15:36:21.130290] [openram.router.supply_router/route]: Routed 188 of 280 supply pins
+[2026-08-10 15:36:21.205539] [openram.router.supply_router/route]: Routed 189 of 280 supply pins
+[2026-08-10 15:36:21.306161] [openram.router.supply_router/route]: Routed 190 of 280 supply pins
+[2026-08-10 15:36:21.333897] [openram.router.supply_router/route]: Routed 191 of 280 supply pins
+[2026-08-10 15:36:21.422055] [openram.router.supply_router/route]: Routed 192 of 280 supply pins
+[2026-08-10 15:36:21.456360] [openram.router.supply_router/route]: Routed 193 of 280 supply pins
+[2026-08-10 15:36:21.532954] [openram.router.supply_router/route]: Routed 194 of 280 supply pins
+[2026-08-10 15:36:21.637048] [openram.router.supply_router/route]: Routed 195 of 280 supply pins
+[2026-08-10 15:36:21.686862] [openram.router.supply_router/route]: Routed 196 of 280 supply pins
+[2026-08-10 15:36:21.764947] [openram.router.supply_router/route]: Routed 197 of 280 supply pins
+[2026-08-10 15:36:21.807286] [openram.router.supply_router/route]: Routed 198 of 280 supply pins
+[2026-08-10 15:36:21.884953] [openram.router.supply_router/route]: Routed 199 of 280 supply pins
+[2026-08-10 15:36:21.991045] [openram.router.supply_router/route]: Routed 200 of 280 supply pins
+[2026-08-10 15:36:22.404292] [openram.router.supply_router/route]: Routed 201 of 280 supply pins
+[2026-08-10 15:36:22.701907] [openram.router.supply_router/route]: Routed 202 of 280 supply pins
+[2026-08-10 15:36:22.775442] [openram.router.supply_router/route]: Routed 203 of 280 supply pins
+[2026-08-10 15:36:23.049856] [openram.router.supply_router/route]: Routed 204 of 280 supply pins
+[2026-08-10 15:36:23.432910] [openram.router.supply_router/route]: Routed 205 of 280 supply pins
+[2026-08-10 15:36:23.800463] [openram.router.supply_router/route]: Routed 206 of 280 supply pins
+[2026-08-10 15:36:24.024745] [openram.router.supply_router/route]: Routed 207 of 280 supply pins
+[2026-08-10 15:36:24.119899] [openram.router.supply_router/route]: Routed 208 of 280 supply pins
+[2026-08-10 15:36:24.161529] [openram.router.supply_router/route]: Routed 209 of 280 supply pins
+[2026-08-10 15:36:24.243559] [openram.router.supply_router/route]: Routed 210 of 280 supply pins
+[2026-08-10 15:36:24.305235] [openram.router.supply_router/route]: Routed 211 of 280 supply pins
+[2026-08-10 15:36:24.343895] [openram.router.supply_router/route]: Routed 212 of 280 supply pins
+[2026-08-10 15:36:24.383568] [openram.router.supply_router/route]: Routed 213 of 280 supply pins
+[2026-08-10 15:36:24.476557] [openram.router.supply_router/route]: Routed 214 of 280 supply pins
+[2026-08-10 15:36:24.541482] [openram.router.supply_router/route]: Routed 215 of 280 supply pins
+[2026-08-10 15:36:24.640020] [openram.router.supply_router/route]: Routed 216 of 280 supply pins
+[2026-08-10 15:36:24.716896] [openram.router.supply_router/route]: Routed 217 of 280 supply pins
+[2026-08-10 15:36:24.811114] [openram.router.supply_router/route]: Routed 218 of 280 supply pins
+[2026-08-10 15:36:24.887166] [openram.router.supply_router/route]: Routed 219 of 280 supply pins
+[2026-08-10 15:36:24.926946] [openram.router.supply_router/route]: Routed 220 of 280 supply pins
+[2026-08-10 15:36:25.016578] [openram.router.supply_router/route]: Routed 221 of 280 supply pins
+[2026-08-10 15:36:25.909788] [openram.router.supply_router/route]: Routed 222 of 280 supply pins
+[2026-08-10 15:36:30.297711] [openram.router.supply_router/route]: Routed 223 of 280 supply pins
+[2026-08-10 15:36:37.740614] [openram.router.supply_router/route]: Routed 224 of 280 supply pins
+[2026-08-10 15:36:44.273812] [openram.router.supply_router/route]: Routed 225 of 280 supply pins
+[2026-08-10 15:36:51.214399] [openram.router.supply_router/route]: Routed 226 of 280 supply pins
+[2026-08-10 15:36:55.442151] [openram.router.supply_router/route]: Routed 227 of 280 supply pins
+[2026-08-10 15:36:57.506978] [openram.router.supply_router/route]: Routed 228 of 280 supply pins
+[2026-08-10 15:37:00.009904] [openram.router.supply_router/route]: Routed 229 of 280 supply pins
+[2026-08-10 15:37:00.054092] [openram.router.supply_router/route]: Routed 230 of 280 supply pins
+[2026-08-10 15:37:00.562254] [openram.router.supply_router/route]: Routed 231 of 280 supply pins
+[2026-08-10 15:37:06.510246] [openram.router.supply_router/route]: Routed 232 of 280 supply pins
+[2026-08-10 15:37:12.355466] [openram.router.supply_router/route]: Routed 233 of 280 supply pins
+[2026-08-10 15:37:19.585813] [openram.router.supply_router/route]: Routed 234 of 280 supply pins
+[2026-08-10 15:37:25.039909] [openram.router.supply_router/route]: Routed 235 of 280 supply pins
+[2026-08-10 15:37:27.231572] [openram.router.supply_router/route]: Routed 236 of 280 supply pins
+[2026-08-10 15:37:27.303329] [openram.router.supply_router/route]: Routed 237 of 280 supply pins
+[2026-08-10 15:37:27.389547] [openram.router.supply_router/route]: Routed 238 of 280 supply pins
+[2026-08-10 15:37:27.430082] [openram.router.supply_router/route]: Routed 239 of 280 supply pins
+[2026-08-10 15:37:27.522599] [openram.router.supply_router/route]: Routed 240 of 280 supply pins
+[2026-08-10 15:37:27.632157] [openram.router.supply_router/route]: Routed 241 of 280 supply pins
+[2026-08-10 15:37:27.753969] [openram.router.supply_router/route]: Routed 242 of 280 supply pins
+[2026-08-10 15:37:27.837406] [openram.router.supply_router/route]: Routed 243 of 280 supply pins
+[2026-08-10 15:37:27.876554] [openram.router.supply_router/route]: Routed 244 of 280 supply pins
+[2026-08-10 15:37:27.971428] [openram.router.supply_router/route]: Routed 245 of 280 supply pins
+[2026-08-10 15:37:28.017498] [openram.router.supply_router/route]: Routed 246 of 280 supply pins
+[2026-08-10 15:37:28.058827] [openram.router.supply_router/route]: Routed 247 of 280 supply pins
+[2026-08-10 15:37:28.152639] [openram.router.supply_router/route]: Routed 248 of 280 supply pins
+[2026-08-10 15:37:28.223357] [openram.router.supply_router/route]: Routed 249 of 280 supply pins
+[2026-08-10 15:37:28.319225] [openram.router.supply_router/route]: Routed 250 of 280 supply pins
+[2026-08-10 15:37:28.508942] [openram.router.supply_router/route]: Routed 251 of 280 supply pins
+[2026-08-10 15:37:29.300104] [openram.router.supply_router/route]: Routed 252 of 280 supply pins
+[2026-08-10 15:37:29.717833] [openram.router.supply_router/route]: Routed 253 of 280 supply pins
+[2026-08-10 15:37:30.155763] [openram.router.supply_router/route]: Routed 254 of 280 supply pins
+[2026-08-10 15:37:33.042110] [openram.router.supply_router/route]: Routed 255 of 280 supply pins
+[2026-08-10 15:37:33.501831] [openram.router.supply_router/route]: Routed 256 of 280 supply pins
+[2026-08-10 15:37:33.750419] [openram.router.supply_router/route]: Routed 257 of 280 supply pins
+[2026-08-10 15:37:33.931485] [openram.router.supply_router/route]: Routed 258 of 280 supply pins
+[2026-08-10 15:37:34.173053] [openram.router.supply_router/route]: Routed 259 of 280 supply pins
+[2026-08-10 15:37:34.523169] [openram.router.supply_router/route]: Routed 260 of 280 supply pins
+[2026-08-10 15:37:34.949482] [openram.router.supply_router/route]: Routed 261 of 280 supply pins
+[2026-08-10 15:37:35.182917] [openram.router.supply_router/route]: Routed 262 of 280 supply pins
+[2026-08-10 15:37:36.138576] [openram.router.supply_router/route]: Routed 263 of 280 supply pins
+[2026-08-10 15:37:37.288587] [openram.router.supply_router/route]: Routed 264 of 280 supply pins
+[2026-08-10 15:37:37.648123] [openram.router.supply_router/route]: Routed 265 of 280 supply pins
+[2026-08-10 15:37:40.263309] [openram.router.supply_router/route]: Routed 266 of 280 supply pins
+[2026-08-10 15:37:43.121318] [openram.router.supply_router/route]: Routed 267 of 280 supply pins
+[2026-08-10 15:37:46.004518] [openram.router.supply_router/route]: Routed 268 of 280 supply pins
+[2026-08-10 15:37:46.650034] [openram.router.supply_router/route]: Routed 269 of 280 supply pins
+[2026-08-10 15:37:51.000236] [openram.router.supply_router/route]: Routed 270 of 280 supply pins
+[2026-08-10 15:37:52.044959] [openram.router.supply_router/route]: Routed 271 of 280 supply pins
+[2026-08-10 15:37:52.996467] [openram.router.supply_router/route]: Routed 272 of 280 supply pins
+[2026-08-10 15:37:55.460916] [openram.router.supply_router/route]: Routed 273 of 280 supply pins
+[2026-08-10 15:37:58.280217] [openram.router.supply_router/route]: Routed 274 of 280 supply pins
+[2026-08-10 15:37:58.833031] [openram.router.supply_router/route]: Routed 275 of 280 supply pins
+[2026-08-10 15:38:01.426188] [openram.router.supply_router/route]: Routed 276 of 280 supply pins
+[2026-08-10 15:38:07.731297] [openram.router.supply_router/route]: Routed 277 of 280 supply pins
+[2026-08-10 15:38:08.778400] [openram.router.supply_router/route]: Routed 278 of 280 supply pins
+[2026-08-10 15:38:08.806015] ** Routing: 284.3 seconds
+[2026-08-10 15:38:08.841983] ** Verification: 0.0 seconds
+[2026-08-10 15:38:08.842101] ** SRAM creation: 286.8 seconds
+[2026-08-10 15:38:08.842149] SP: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.sp
+[2026-08-10 15:38:08.873739] [openram.characterizer.functional/__init__]: Random seed for functional simulation: 1786401488873318361
+[2026-08-10 15:38:08.874479] [openram.characterizer.functional/__init__]: q:		xsram:xbank0:xbitcell_array:xbitcell_array:xbit_r0_c0.Q
+[2026-08-10 15:38:08.874767] [openram.characterizer.functional/__init__]: qbar:	xsram:xbank0:xbitcell_array:xbitcell_array:xbit_r0_c0.Q_bar
+[2026-08-10 15:38:08.875026] [openram.characterizer.functional/__init__]: s_en:	xsram:s_en
+[2026-08-10 15:38:08.875282] [openram.characterizer.functional/__init__]: bl:	xsram:xbank0:bl_0_{}
+[2026-08-10 15:38:08.875544] [openram.characterizer.functional/__init__]: br:	xsram:xbank0:br_0_{}
+[2026-08-10 15:38:08.875992] [openram.characterizer.simulation/add_noop_all_ports]: 	Idle during cycle 0 (0ns - 10ns)
+[2026-08-10 15:38:08.876467] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001001100000010111  to  address 000000 (from port 0) during cycle 1 (10ns - 20ns)
+[2026-08-10 15:38:08.876863] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101101101010001111  to  address 111110 (from port 0) during cycle 2 (20ns - 30ns)
+[2026-08-10 15:38:08.877234] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101111001101101110  to  address 000000 (from port 0) during cycle 3 (30ns - 40ns)
+[2026-08-10 15:38:08.877650] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101111001101101110 from address 000000 (from port 1) during cycle 4 (40ns - 50ns)
+[2026-08-10 15:38:08.878139] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101101101010001111 from address 111110 (from port 1) during cycle 5 (50ns - 60ns)
+[2026-08-10 15:38:08.878637] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101111001101101110 from address 000000 (from port 1) during cycle 7 (70ns - 80ns)
+[2026-08-10 15:38:08.879075] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001010001100110010  to  address 000000 (from port 0) during cycle 8 (80ns - 90ns)
+[2026-08-10 15:38:08.879513] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001001101111010101  to  address 000000 (from port 0) during cycle 9 (90ns - 100ns)
+[2026-08-10 15:38:08.879978] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101101101010001111 from address 111110 (from port 1) during cycle 9 (90ns - 100ns)
+[2026-08-10 15:38:08.880399] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011011000101010110  to  address 111110 (from port 0) during cycle 10 (100ns - 110ns)
+[2026-08-10 15:38:08.880842] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111000110100100101  to  address 111110 (from port 0) during cycle 11 (110ns - 120ns)
+[2026-08-10 15:38:08.881316] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111000110100100101 from address 111110 (from port 1) during cycle 13 (130ns - 140ns)
+[2026-08-10 15:38:08.881770] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000110011010011010  to  address 000000 (from port 0) during cycle 15 (150ns - 160ns)
+[2026-08-10 15:38:08.882246] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000110011010011010 from address 000000 (from port 1) during cycle 16 (160ns - 170ns)
+[2026-08-10 15:38:08.882715] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111000110100100101 from address 111110 (from port 1) during cycle 17 (170ns - 180ns)
+[2026-08-10 15:38:08.883136] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110101011101001000  to  address 000000 (from port 0) during cycle 18 (180ns - 190ns)
+[2026-08-10 15:38:08.883600] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111000110100100101 from address 111110 (from port 1) during cycle 19 (190ns - 200ns)
+[2026-08-10 15:38:08.884059] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1110101011101001000 from address 000000 (from port 1) during cycle 20 (200ns - 210ns)
+[2026-08-10 15:38:08.884484] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1001001111111110111  to  address 000000 (from port 0) during cycle 22 (220ns - 230ns)
+[2026-08-10 15:38:08.884986] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111000110100100101 from address 111110 (from port 1) during cycle 22 (220ns - 230ns)
+[2026-08-10 15:38:08.885433] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110111000000010001  to  address 000000 (from port 0) during cycle 24 (240ns - 250ns)
+[2026-08-10 15:38:08.885872] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001100000000111111  to  address 111110 (from port 0) during cycle 25 (250ns - 260ns)
+[2026-08-10 15:38:08.886333] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1110111000000010001 from address 000000 (from port 1) during cycle 25 (250ns - 260ns)
+[2026-08-10 15:38:08.886745] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000011011001011011  to  address 000000 (from port 0) during cycle 26 (260ns - 270ns)
+[2026-08-10 15:38:08.887213] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000011011001011011 from address 000000 (from port 1) during cycle 27 (270ns - 280ns)
+[2026-08-10 15:38:08.887628] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101011001010010110  to  address 000000 (from port 0) during cycle 28 (280ns - 290ns)
+[2026-08-10 15:38:08.888051] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0110001111100011010  to  address 000000 (from port 0) during cycle 29 (290ns - 300ns)
+[2026-08-10 15:38:08.888469] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0100000110111001000  to  address 111110 (from port 0) during cycle 30 (300ns - 310ns)
+[2026-08-10 15:38:08.888926] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0110001111100011010 from address 000000 (from port 1) during cycle 30 (300ns - 310ns)
+[2026-08-10 15:38:08.889386] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0100000110111001000 from address 111110 (from port 1) during cycle 31 (310ns - 320ns)
+[2026-08-10 15:38:08.889810] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011001110110111011  to  address 000000 (from port 0) during cycle 32 (320ns - 330ns)
+[2026-08-10 15:38:08.890321] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001110110111011 from address 000000 (from port 1) during cycle 34 (340ns - 350ns)
+[2026-08-10 15:38:08.890788] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001110110111011 from address 000000 (from port 1) during cycle 35 (350ns - 360ns)
+[2026-08-10 15:38:08.891204] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011101010111001101  to  address 111110 (from port 0) during cycle 36 (360ns - 370ns)
+[2026-08-10 15:38:08.891624] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101011101110001011  to  address 111110 (from port 0) during cycle 37 (370ns - 380ns)
+[2026-08-10 15:38:08.892067] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1011101111111010011  to  address 111110 (from port 0) during cycle 40 (400ns - 410ns)
+[2026-08-10 15:38:08.892511] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000101001101010100  to  address 000000 (from port 0) during cycle 42 (420ns - 430ns)
+[2026-08-10 15:38:08.892937] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000010101001001101  to  address 000000 (from port 0) during cycle 44 (440ns - 450ns)
+[2026-08-10 15:38:08.893358] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111101010010000110  to  address 111110 (from port 0) during cycle 45 (450ns - 460ns)
+[2026-08-10 15:38:08.893793] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110101001001010100  to  address 111110 (from port 0) during cycle 46 (460ns - 470ns)
+[2026-08-10 15:38:08.894275] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010101001001101 from address 000000 (from port 1) during cycle 47 (470ns - 480ns)
+[2026-08-10 15:38:08.894708] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0010110001001000110  to  address 111110 (from port 0) during cycle 49 (490ns - 500ns)
+[2026-08-10 15:38:08.895174] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010101001001101 from address 000000 (from port 1) during cycle 50 (500ns - 510ns)
+[2026-08-10 15:38:08.895618] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110101101011100101  to  address 111110 (from port 0) during cycle 51 (510ns - 520ns)
+[2026-08-10 15:38:08.896029] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100111111100010010  to  address 111110 (from port 0) during cycle 52 (520ns - 530ns)
+[2026-08-10 15:38:08.896440] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100111101010110010  to  address 111110 (from port 0) during cycle 53 (530ns - 540ns)
+[2026-08-10 15:38:08.896880] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010101001001101 from address 000000 (from port 1) during cycle 53 (530ns - 540ns)
+[2026-08-10 15:38:08.897280] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1000010000110111001  to  address 111110 (from port 0) during cycle 54 (540ns - 550ns)
+[2026-08-10 15:38:08.897702] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000010110101010001  to  address 111110 (from port 0) during cycle 55 (550ns - 560ns)
+[2026-08-10 15:38:08.898150] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010110101010001 from address 111110 (from port 1) during cycle 56 (560ns - 570ns)
+[2026-08-10 15:38:08.898593] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010110101010001 from address 111110 (from port 1) during cycle 57 (570ns - 580ns)
+[2026-08-10 15:38:08.899035] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010110101010001 from address 111110 (from port 1) during cycle 58 (580ns - 590ns)
+[2026-08-10 15:38:08.899435] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1011111100100010000  to  address 000000 (from port 0) during cycle 59 (590ns - 600ns)
+[2026-08-10 15:38:08.899885] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010110101010001 from address 111110 (from port 1) during cycle 60 (600ns - 610ns)
+[2026-08-10 15:38:08.900328] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1011111100100010000 from address 000000 (from port 1) during cycle 61 (610ns - 620ns)
+[2026-08-10 15:38:08.900803] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000010110101010001 from address 111110 (from port 1) during cycle 62 (620ns - 630ns)
+[2026-08-10 15:38:08.901212] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1001010001001001110  to  address 111110 (from port 0) during cycle 63 (630ns - 640ns)
+[2026-08-10 15:38:08.901663] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1011111100100010000 from address 000000 (from port 1) during cycle 63 (630ns - 640ns)
+[2026-08-10 15:38:08.902068] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001000110000010011  to  address 111110 (from port 0) during cycle 64 (640ns - 650ns)
+[2026-08-10 15:38:08.902527] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0001000110000010011 from address 111110 (from port 1) during cycle 65 (650ns - 660ns)
+[2026-08-10 15:38:08.902972] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1011111100100010000 from address 000000 (from port 1) during cycle 66 (660ns - 670ns)
+[2026-08-10 15:38:08.903369] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001001000011011111  to  address 000000 (from port 0) during cycle 67 (670ns - 680ns)
+[2026-08-10 15:38:08.903860] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0001001000011011111 from address 000000 (from port 1) during cycle 70 (700ns - 710ns)
+[2026-08-10 15:38:08.904279] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101101011011010110  to  address 111110 (from port 0) during cycle 71 (710ns - 720ns)
+[2026-08-10 15:38:08.904731] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0001001000011011111 from address 000000 (from port 1) during cycle 72 (720ns - 730ns)
+[2026-08-10 15:38:08.905164] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101001001101111010  to  address 000000 (from port 0) during cycle 75 (750ns - 760ns)
+[2026-08-10 15:38:08.905612] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010001001000101011  to  address 111110 (from port 0) during cycle 76 (760ns - 770ns)
+[2026-08-10 15:38:08.906121] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0101001001101111010 from address 000000 (from port 1) during cycle 77 (770ns - 780ns)
+[2026-08-10 15:38:08.906545] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001001011001000001  to  address 000000 (from port 0) during cycle 78 (780ns - 790ns)
+[2026-08-10 15:38:08.907011] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1010001001000101011 from address 111110 (from port 1) during cycle 79 (790ns - 800ns)
+[2026-08-10 15:38:08.907454] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011001101011010110  to  address 000000 (from port 0) during cycle 81 (810ns - 820ns)
+[2026-08-10 15:38:08.907916] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1010001001000101011 from address 111110 (from port 1) during cycle 81 (810ns - 820ns)
+[2026-08-10 15:38:08.908335] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100011000110000010  to  address 111110 (from port 0) during cycle 82 (820ns - 830ns)
+[2026-08-10 15:38:08.908764] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110110010111100100  to  address 111110 (from port 0) during cycle 84 (840ns - 850ns)
+[2026-08-10 15:38:08.909230] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 86 (860ns - 870ns)
+[2026-08-10 15:38:08.909707] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 88 (880ns - 890ns)
+[2026-08-10 15:38:08.910125] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011110000000101111  to  address 111110 (from port 0) during cycle 89 (890ns - 900ns)
+[2026-08-10 15:38:08.910586] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 90 (900ns - 910ns)
+[2026-08-10 15:38:08.910997] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0110010011110011100  to  address 111110 (from port 0) during cycle 91 (910ns - 920ns)
+[2026-08-10 15:38:08.911415] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010100010001001001  to  address 111110 (from port 0) during cycle 92 (920ns - 930ns)
+[2026-08-10 15:38:08.911875] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 92 (920ns - 930ns)
+[2026-08-10 15:38:08.912313] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111101001110000111  to  address 111110 (from port 0) during cycle 93 (930ns - 940ns)
+[2026-08-10 15:38:08.912792] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 93 (930ns - 940ns)
+[2026-08-10 15:38:08.913258] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001101011010110 from address 000000 (from port 1) during cycle 95 (950ns - 960ns)
+[2026-08-10 15:38:08.913712] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1001010000110101101  to  address 111110 (from port 0) during cycle 99 (990ns - 1000ns)
+[2026-08-10 15:38:08.914133] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0100001000101101110  to  address 000000 (from port 0) during cycle 100 (1000ns - 1010ns)
+[2026-08-10 15:38:08.914564] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011001010001101100  to  address 111110 (from port 0) during cycle 103 (1030ns - 1040ns)
+[2026-08-10 15:38:08.914982] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011001010000010101  to  address 111110 (from port 0) during cycle 104 (1040ns - 1050ns)
+[2026-08-10 15:38:08.915402] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0100000111110000001  to  address 000000 (from port 0) during cycle 105 (1050ns - 1060ns)
+[2026-08-10 15:38:08.915826] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101110011010001000  to  address 000000 (from port 0) during cycle 106 (1060ns - 1070ns)
+[2026-08-10 15:38:08.916245] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101010100010010110  to  address 000000 (from port 0) during cycle 107 (1070ns - 1080ns)
+[2026-08-10 15:38:08.916703] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001010000010101 from address 111110 (from port 1) during cycle 107 (1070ns - 1080ns)
+[2026-08-10 15:38:08.917185] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001010000010101 from address 111110 (from port 1) during cycle 111 (1110ns - 1120ns)
+[2026-08-10 15:38:08.917607] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0010110011111111100  to  address 000000 (from port 0) during cycle 113 (1130ns - 1140ns)
+[2026-08-10 15:38:08.918058] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001010000010101 from address 111110 (from port 1) during cycle 113 (1130ns - 1140ns)
+[2026-08-10 15:38:08.918502] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0010110011111111100 from address 000000 (from port 1) during cycle 114 (1140ns - 1150ns)
+[2026-08-10 15:38:08.918901] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101011100110110001  to  address 000000 (from port 0) during cycle 115 (1150ns - 1160ns)
+[2026-08-10 15:38:08.919313] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010100011001011010  to  address 000000 (from port 0) during cycle 117 (1170ns - 1180ns)
+[2026-08-10 15:38:08.919755] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011001010000010101 from address 111110 (from port 1) during cycle 117 (1170ns - 1180ns)
+[2026-08-10 15:38:08.920205] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1010100011001011010 from address 000000 (from port 1) during cycle 119 (1190ns - 1200ns)
+[2026-08-10 15:38:08.920623] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101011010100000101  to  address 111110 (from port 0) during cycle 120 (1200ns - 1210ns)
+[2026-08-10 15:38:08.921107] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1010100011001011010 from address 000000 (from port 1) during cycle 120 (1200ns - 1210ns)
+[2026-08-10 15:38:08.921591] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101011010100000101 from address 111110 (from port 1) during cycle 124 (1240ns - 1250ns)
+[2026-08-10 15:38:08.922018] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0010011110100100100  to  address 000000 (from port 0) during cycle 125 (1250ns - 1260ns)
+[2026-08-10 15:38:08.922474] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101011010100000101 from address 111110 (from port 1) during cycle 125 (1250ns - 1260ns)
+[2026-08-10 15:38:08.922941] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101011010100000101 from address 111110 (from port 1) during cycle 126 (1260ns - 1270ns)
+[2026-08-10 15:38:08.923392] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101111001111100011  to  address 111110 (from port 0) during cycle 127 (1270ns - 1280ns)
+[2026-08-10 15:38:08.923853] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0010011110100100100 from address 000000 (from port 1) during cycle 127 (1270ns - 1280ns)
+[2026-08-10 15:38:08.924268] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0111000011111111010  to  address 000000 (from port 0) during cycle 128 (1280ns - 1290ns)
+[2026-08-10 15:38:08.924732] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0101111001111100011 from address 111110 (from port 1) during cycle 128 (1280ns - 1290ns)
+[2026-08-10 15:38:08.925148] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0010101011011101000  to  address 111110 (from port 0) during cycle 129 (1290ns - 1300ns)
+[2026-08-10 15:38:08.925613] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0010101011011101000 from address 111110 (from port 1) during cycle 130 (1300ns - 1310ns)
+[2026-08-10 15:38:08.926053] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111011010010001111  to  address 111110 (from port 0) during cycle 131 (1310ns - 1320ns)
+[2026-08-10 15:38:08.926517] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111011010010001111 from address 111110 (from port 1) during cycle 132 (1320ns - 1330ns)
+[2026-08-10 15:38:08.926931] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111100001011001011  to  address 111110 (from port 0) during cycle 133 (1330ns - 1340ns)
+[2026-08-10 15:38:08.927394] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0111000011111111010 from address 000000 (from port 1) during cycle 133 (1330ns - 1340ns)
+[2026-08-10 15:38:08.927850] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111100001011001011 from address 111110 (from port 1) during cycle 134 (1340ns - 1350ns)
+[2026-08-10 15:38:08.928263] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010000011001110010  to  address 000000 (from port 0) during cycle 135 (1350ns - 1360ns)
+[2026-08-10 15:38:08.928750] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111100001011001011 from address 111110 (from port 1) during cycle 135 (1350ns - 1360ns)
+[2026-08-10 15:38:08.929180] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110011000110111010  to  address 000000 (from port 0) during cycle 137 (1370ns - 1380ns)
+[2026-08-10 15:38:08.929600] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010011101000011001  to  address 000000 (from port 0) during cycle 138 (1380ns - 1390ns)
+[2026-08-10 15:38:08.930062] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111100001011001011 from address 111110 (from port 1) during cycle 138 (1380ns - 1390ns)
+[2026-08-10 15:38:08.930480] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000000110110111010  to  address 111110 (from port 0) during cycle 139 (1390ns - 1400ns)
+[2026-08-10 15:38:08.930899] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1000100110010111001  to  address 000000 (from port 0) during cycle 140 (1400ns - 1410ns)
+[2026-08-10 15:38:08.931321] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1011101100010010000  to  address 000000 (from port 0) during cycle 141 (1410ns - 1420ns)
+[2026-08-10 15:38:08.931778] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0000000110110111010 from address 111110 (from port 1) during cycle 141 (1410ns - 1420ns)
+[2026-08-10 15:38:08.932193] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111111101001100011  to  address 111110 (from port 0) during cycle 142 (1420ns - 1430ns)
+[2026-08-10 15:38:08.932646] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1011101100010010000 from address 000000 (from port 1) during cycle 142 (1420ns - 1430ns)
+[2026-08-10 15:38:08.933105] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1011101100010010000 from address 000000 (from port 1) during cycle 143 (1430ns - 1440ns)
+[2026-08-10 15:38:08.933485] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0010001000011010010  to  address 111110 (from port 0) during cycle 144 (1440ns - 1450ns)
+[2026-08-10 15:38:08.933879] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100100001010001111  to  address 111110 (from port 0) during cycle 145 (1450ns - 1460ns)
+[2026-08-10 15:38:08.934254] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1000000111011001011  to  address 111110 (from port 0) during cycle 146 (1460ns - 1470ns)
+[2026-08-10 15:38:08.934626] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110111110000100000  to  address 111110 (from port 0) during cycle 147 (1470ns - 1480ns)
+[2026-08-10 15:38:08.935057] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1110111110000100000 from address 111110 (from port 1) during cycle 148 (1480ns - 1490ns)
+[2026-08-10 15:38:08.935470] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011000101011011111  to  address 111110 (from port 0) during cycle 149 (1490ns - 1500ns)
+[2026-08-10 15:38:08.935919] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0011000101011011111 from address 111110 (from port 1) during cycle 150 (1500ns - 1510ns)
+[2026-08-10 15:38:08.936328] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111000111110001010  to  address 111110 (from port 0) during cycle 152 (1520ns - 1530ns)
+[2026-08-10 15:38:08.936749] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111100010000001000  to  address 000000 (from port 0) during cycle 153 (1530ns - 1540ns)
+[2026-08-10 15:38:08.937225] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111000111110001010 from address 111110 (from port 1) during cycle 154 (1540ns - 1550ns)
+[2026-08-10 15:38:08.937721] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111100010000001000 from address 000000 (from port 1) during cycle 156 (1560ns - 1570ns)
+[2026-08-10 15:38:08.938153] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101110010101000101  to  address 111110 (from port 0) during cycle 159 (1590ns - 1600ns)
+[2026-08-10 15:38:08.938578] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0111101100001100011  to  address 000000 (from port 0) during cycle 161 (1610ns - 1620ns)
+[2026-08-10 15:38:08.939032] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101110010101000101 from address 111110 (from port 1) during cycle 161 (1610ns - 1620ns)
+[2026-08-10 15:38:08.939444] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1000010000001111101  to  address 111110 (from port 0) during cycle 162 (1620ns - 1630ns)
+[2026-08-10 15:38:08.939861] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0110110000011000100  to  address 000000 (from port 0) during cycle 163 (1630ns - 1640ns)
+[2026-08-10 15:38:08.940294] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001011011010111101  to  address 000000 (from port 0) during cycle 166 (1660ns - 1670ns)
+[2026-08-10 15:38:08.940795] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1000010000001111101 from address 111110 (from port 1) during cycle 166 (1660ns - 1670ns)
+[2026-08-10 15:38:08.941255] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1000010000001111101 from address 111110 (from port 1) during cycle 167 (1670ns - 1680ns)
+[2026-08-10 15:38:08.941722] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1000010000001111101 from address 111110 (from port 1) during cycle 168 (1680ns - 1690ns)
+[2026-08-10 15:38:08.942139] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101001000111010001  to  address 111110 (from port 0) during cycle 169 (1690ns - 1700ns)
+[2026-08-10 15:38:08.942555] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1001100100101011101  to  address 000000 (from port 0) during cycle 170 (1700ns - 1710ns)
+[2026-08-10 15:38:08.942971] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100101111110010010  to  address 000000 (from port 0) during cycle 171 (1710ns - 1720ns)
+[2026-08-10 15:38:08.943427] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0111010011101111010  to  address 000000 (from port 0) during cycle 172 (1720ns - 1730ns)
+[2026-08-10 15:38:08.943916] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0111010011101111010 from address 000000 (from port 1) during cycle 174 (1740ns - 1750ns)
+[2026-08-10 15:38:08.944331] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111100110100101111  to  address 000000 (from port 0) during cycle 175 (1750ns - 1760ns)
+[2026-08-10 15:38:08.944785] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101001000111010001 from address 111110 (from port 1) during cycle 175 (1750ns - 1760ns)
+[2026-08-10 15:38:08.945204] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110111100011010011  to  address 000000 (from port 0) during cycle 176 (1760ns - 1770ns)
+[2026-08-10 15:38:08.945676] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101001000111010001 from address 111110 (from port 1) during cycle 177 (1770ns - 1780ns)
+[2026-08-10 15:38:08.946125] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0110100000011010110  to  address 111110 (from port 0) during cycle 178 (1780ns - 1790ns)
+[2026-08-10 15:38:08.946550] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1011100000100101100  to  address 000000 (from port 0) during cycle 179 (1790ns - 1800ns)
+[2026-08-10 15:38:08.946970] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111001100000011011  to  address 111110 (from port 0) during cycle 180 (1800ns - 1810ns)
+[2026-08-10 15:38:08.947388] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0000010111011111001  to  address 111110 (from port 0) during cycle 181 (1810ns - 1820ns)
+[2026-08-10 15:38:08.947807] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101111111011100111  to  address 000000 (from port 0) during cycle 182 (1820ns - 1830ns)
+[2026-08-10 15:38:08.948239] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0111101001110100111  to  address 111110 (from port 0) during cycle 183 (1830ns - 1840ns)
+[2026-08-10 15:38:08.948693] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0101111111011100111 from address 000000 (from port 1) during cycle 183 (1830ns - 1840ns)
+[2026-08-10 15:38:08.949163] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0111101001110100111 from address 111110 (from port 1) during cycle 184 (1840ns - 1850ns)
+[2026-08-10 15:38:08.949638] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0101111111011100111 from address 000000 (from port 1) during cycle 185 (1850ns - 1860ns)
+[2026-08-10 15:38:08.950065] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1100110010100001001  to  address 000000 (from port 0) during cycle 187 (1870ns - 1880ns)
+[2026-08-10 15:38:08.950485] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0011010001111100101  to  address 000000 (from port 0) during cycle 188 (1880ns - 1890ns)
+[2026-08-10 15:38:08.950940] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0111101001110100111 from address 111110 (from port 1) during cycle 188 (1880ns - 1890ns)
+[2026-08-10 15:38:08.951351] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001101110111001100  to  address 111110 (from port 0) during cycle 189 (1890ns - 1900ns)
+[2026-08-10 15:38:08.951784] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0111101010101100011  to  address 111110 (from port 0) during cycle 190 (1900ns - 1910ns)
+[2026-08-10 15:38:08.952206] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0110111001001111010  to  address 000000 (from port 0) during cycle 191 (1910ns - 1920ns)
+[2026-08-10 15:38:08.952625] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0001110010000000010  to  address 000000 (from port 0) during cycle 192 (1920ns - 1930ns)
+[2026-08-10 15:38:08.953043] [openram.characterizer.simulation/add_write_one_port]: 	Writing 0101110010101101011  to  address 000000 (from port 0) during cycle 193 (1930ns - 1940ns)
+[2026-08-10 15:38:08.953506] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0101110010101101011 from address 000000 (from port 1) during cycle 194 (1940ns - 1950ns)
+[2026-08-10 15:38:08.953940] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1110001011110110011  to  address 000000 (from port 0) during cycle 195 (1950ns - 1960ns)
+[2026-08-10 15:38:08.954408] [openram.characterizer.simulation/add_read_one_port]: 	Reading 0111101010101100011 from address 111110 (from port 1) during cycle 196 (1960ns - 1970ns)
+[2026-08-10 15:38:08.954821] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1111110101001000111  to  address 111110 (from port 0) during cycle 197 (1970ns - 1980ns)
+[2026-08-10 15:38:08.955283] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010101000000110111  to  address 000000 (from port 0) during cycle 198 (1980ns - 1990ns)
+[2026-08-10 15:38:08.955743] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111110101001000111 from address 111110 (from port 1) during cycle 198 (1980ns - 1990ns)
+[2026-08-10 15:38:08.956199] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1111110101001000111 from address 111110 (from port 1) during cycle 199 (1990ns - 2000ns)
+[2026-08-10 15:38:08.956639] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1101100111011110110  to  address 111110 (from port 0) during cycle 201 (2010ns - 2020ns)
+[2026-08-10 15:38:08.957140] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101100111011110110 from address 111110 (from port 1) during cycle 202 (2020ns - 2030ns)
+[2026-08-10 15:38:08.957603] [openram.characterizer.simulation/add_read_one_port]: 	Reading 1101100111011110110 from address 111110 (from port 1) during cycle 203 (2030ns - 2040ns)
+[2026-08-10 15:38:08.958062] [openram.characterizer.simulation/add_write_one_port]: 	Writing 1010100100001101110  to  address 111110 (from port 0) during cycle 204 (2040ns - 2050ns)
+[2026-08-10 15:38:08.958542] [openram.characterizer.simulation/add_noop_all_ports]: 	Idle during cycle 205 (2050ns - 2060ns)
+[2026-08-10 15:38:08.990256] ** Spice writing: 0.1 seconds
+[2026-08-10 15:38:08.990360] DELAY: Writing stimulus...
+[2026-08-10 15:38:09.051347] [openram.base.timing_graph/get_all_paths]: Paths found=4
+[2026-08-10 15:38:09.246408] [openram.characterizer.delay/create_sen_and_bitline_path_measures]: self.bl_name = xsky130_sram_19x64.xbank0.bl_1_18
+[2026-08-10 15:38:09.246848] [openram.characterizer.delay/create_sen_and_bitline_path_measures]: self.graph.all_paths = [['clk1', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb1_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb2_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb3_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb4_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb5_int', 'xsky130_sram_19x64.clk_buf1', 'xsky130_sram_19x64.xcontrol1.clk_bar', 'xsky130_sram_19x64.xcontrol1.xand2_gated_clk_bar.zb_int', 'xsky130_sram_19x64.xcontrol1.gated_clk_bar', 'xsky130_sram_19x64.xcontrol1.xbuf_wl_en.zb1_int', 'xsky130_sram_19x64.wl_en1', 'xsky130_sram_19x64.xbank0.xport_address1.xwordline_driver.xwl_driver_and63.zb_int', 'xsky130_sram_19x64.xbank0.wl_1_63', 'xsky130_sram_19x64.xbank0.bl_1_18', 'dout1_18'], ['clk1', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb1_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb2_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb3_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb4_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb5_int', 'xsky130_sram_19x64.clk_buf1', 'xsky130_sram_19x64.xcontrol1.clk_bar', 'xsky130_sram_19x64.xcontrol1.xand2_gated_clk_bar.zb_int', 'xsky130_sram_19x64.xcontrol1.gated_clk_bar', 'xsky130_sram_19x64.xcontrol1.xbuf_wl_en.zb1_int', 'xsky130_sram_19x64.wl_en1', 'xsky130_sram_19x64.xbank0.xport_address1.xwordline_driver.xwl_driver_and63.zb_int', 'xsky130_sram_19x64.xbank0.wl_1_63', 'xsky130_sram_19x64.xbank0.br_1_18', 'dout1_18'], ['clk1', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb1_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb2_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb3_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb4_int', 'xsky130_sram_19x64.xcontrol1.xclkbuf.zb5_int', 'xsky130_sram_19x64.clk_buf1', 'xsky130_sram_19x64.xcontrol1.clk_bar', 'xsky130_sram_19x64.xcontrol1.xand2_gated_clk_bar.zb_int', 'xsky130_sram_19x64.xcontrol1.gated_clk_bar', 'xsky130_sram_19x64.xcontrol1.xbuf_wl_en.zb1_int', 'xsky130_sram_19x64.wl_en1', 'xsky130_sram_19x64.xbank0.xport_address1.xrbl_driver.zb_int', 'xsky130_sram_19x64.xbank0.rbl_wl1', 'xsky130_sram_19x64.rbl_bl1', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_1', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_2', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_3', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_4', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_5', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_6', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_7', 'xsky130_sram_19x64.xcontrol1.xdelay_chain.dout_8', 'xsky130_sram_19x64.xcontrol1.rbl_bl_delay', 'xsky130_sram_19x64.xcontrol1.xbuf_s_en_and.zb_int', 'xsky130_sram_19x64.s_en1', 'dout1_18']]
+[2026-08-10 15:38:09.247441] [openram.characterizer.simulation/add_noop_all_ports]: Idle cycle (no positive clock edge)
+[2026-08-10 15:38:09.247787] [openram.characterizer.simulation/add_write]: W data 1 address 000000
+[2026-08-10 15:38:09.248112] [openram.characterizer.simulation/add_write]: W data 0 address 111111 to write value
+[2026-08-10 15:38:09.248438] [openram.characterizer.simulation/add_noop_clock_one_port]: Clock only on port 0
+[2026-08-10 15:38:09.248769] [openram.characterizer.simulation/add_read]: R data 1 address 000000 to set dout caps
+[2026-08-10 15:38:09.249144] [openram.characterizer.simulation/add_read]: R data 0 address 111111 to check W0 worked
+[2026-08-10 15:38:09.249496] [openram.characterizer.simulation/add_noop_clock_one_port]: Clock only on port 1
+[2026-08-10 15:38:09.249850] [openram.characterizer.simulation/add_noop_all_ports]: Idle cycle (if read takes >1 cycle)
+[2026-08-10 15:38:09.250216] [openram.characterizer.simulation/add_write]: W data 1 address 111111 to write value
+[2026-08-10 15:38:09.250578] [openram.characterizer.simulation/add_noop_clock_one_port]: Clock only on port 0
+[2026-08-10 15:38:09.250948] [openram.characterizer.simulation/add_write]: W data 0 address 000000 to clear din caps
+[2026-08-10 15:38:09.251324] [openram.characterizer.simulation/add_noop_clock_one_port]: Clock only on port 1
+[2026-08-10 15:38:09.251710] [openram.characterizer.simulation/add_read]: R data 0 address 000000 to clear dout caps
+[2026-08-10 15:38:09.252108] [openram.characterizer.simulation/add_read]: R data 1 address 111111 to check W1 worked
+[2026-08-10 15:38:09.252494] [openram.characterizer.simulation/add_noop_all_ports]: Idle cycle (if read takes >1 cycle))
+[2026-08-10 15:38:09.254385] ** DELAY: 0.3 seconds
+[2026-08-10 15:38:09.284561] GDS: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.gds
+[2026-08-10 15:38:09.502905] ** GDS: 0.2 seconds
+[2026-08-10 15:38:09.503009] LEF: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.lef
+[2026-08-10 15:38:09.514228] ** LEF: 0.0 seconds
+[2026-08-10 15:38:09.514316] LVS: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.lvs.sp
+[2026-08-10 15:38:09.545887] ** LVS writing: 0.0 seconds
+[2026-08-10 15:38:09.545996] LIB: Characterizing... 
+[2026-08-10 15:38:09.546819] [openram.characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
+[2026-08-10 15:38:09.547345] [openram.characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
+[2026-08-10 15:38:09.547741] [openram.characterizer.lib/prepare_tables]: self.load_slews : [(np.float64(1.7225), np.float64(0.00125)), (np.float64(6.89), np.float64(0.00125)), (np.float64(27.56), np.float64(0.00125)), (np.float64(1.7225), np.float64(0.005)), (np.float64(6.89), np.float64(0.005)), (np.float64(27.56), np.float64(0.005)), (np.float64(1.7225), np.float64(0.04)), (np.float64(6.89), np.float64(0.04)), (np.float64(27.56), np.float64(0.04))]
+[2026-08-10 15:38:09.548087] [openram.characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
+[2026-08-10 15:38:09.548435] [openram.characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[2026-08-10 15:38:09.548813] [openram.characterizer.lib/characterize_corners]: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64_TT_1p8V_25C.lib
+[2026-08-10 15:38:09.549481] WARNING: file elmore.py: line 45: In analytical mode, all ports have the timing of the first read port.
+
+[2026-08-10 15:38:09.579737] [openram.base.timing_graph/get_all_paths]: Paths found=4
+[2026-08-10 15:38:09.723453] [openram.base.timing_graph/get_all_paths]: Paths found=4
+[2026-08-10 15:38:09.824969] [openram.characterizer.elmore/analytical_power]: Dynamic Power: 7769358327.679146 mW
+[2026-08-10 15:38:09.825510] [openram.characterizer.elmore/analytical_power]: Leakage Power: 0.00196 mW
+[2026-08-10 15:38:09.825959] [openram.characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[2026-08-10 15:38:09.826645] [openram.characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.23300223214285717, 0.00167765625
+[2026-08-10 15:38:09.827238] [openram.characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.2620694196428572, 0.004584374999999999
+[2026-08-10 15:38:09.827798] [openram.characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.3783381696428571, 0.016211249999999996
+[2026-08-10 15:38:09.828354] [openram.characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.23300223214285717, 0.00167765625
+[2026-08-10 15:38:09.828894] [openram.characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.2620694196428572, 0.004584374999999999
+[2026-08-10 15:38:09.829427] [openram.characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.3783381696428571, 0.016211249999999996
+[2026-08-10 15:38:09.829971] [openram.characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.23300223214285717, 0.00167765625
+[2026-08-10 15:38:09.830507] [openram.characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.2620694196428572, 0.004584374999999999
+[2026-08-10 15:38:09.831039] [openram.characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.3783381696428571, 0.016211249999999996
+[2026-08-10 15:38:09.831515] [openram.characterizer.elmore/get_lib_values]: SRAM Data:
+{'min_period': np.float64(1.3998512276785713), 'leakage_power': 0.00196}
+[2026-08-10 15:38:09.832195] [openram.characterizer.elmore/get_lib_values]: Port Data:
+[{'delay_lh': [], 'delay_hl': [], 'slew_lh': [], 'slew_hl': [], 'read0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'read1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'write0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'write1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_read0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_read1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_write0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_write1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)]}, {'delay_lh': [np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571), np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571), np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571)], 'delay_hl': [np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571), np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571), np.float64(0.23300223214285717), np.float64(0.2620694196428572), np.float64(0.3783381696428571)], 'slew_lh': [np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996), np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996), np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996)], 'slew_hl': [np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996), np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996), np.float64(0.00167765625), np.float64(0.004584374999999999), np.float64(0.016211249999999996)], 'read0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'read1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'write0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'write1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_read0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_read1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_write0_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)], 'disabled_write1_power': [np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146), np.float64(7769358327.679146)]}]
+[2026-08-10 15:38:09.832935] [openram.characterizer.setup_hold/__init__]: Feasible period from technology file: 10 
+[2026-08-10 15:38:09.843289] ** Characterization: 0.3 seconds
+[2026-08-10 15:38:09.843467] Config: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.py
+[2026-08-10 15:38:09.843524] ** Config: 0.0 seconds
+[2026-08-10 15:38:09.844258] Datasheet: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.html
+[2026-08-10 15:38:09.845483] ** Datasheet: 0.0 seconds
+[2026-08-10 15:38:09.845544] Verilog: Writing to /scratch/prashanth/openram/OpenRAM/./output_sram/sram_19x64_1r1w_l0_typical_analytical_physical/sky130_sram_19x64.v
+[2026-08-10 15:38:09.845709] ** Verilog: 0.0 seconds
+[2026-08-10 15:38:09.846145] [openram.globals/purge_temp]: Purging temp directory: /scratch/prashanth/openram/OpenRAM/runs/analytical_physical_20260810_153320/sram_19x64_analytical_physical/temp/
+[2026-08-10 15:38:09.846692] ** End: 287.8 seconds
